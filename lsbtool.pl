@@ -85,14 +85,15 @@ sub info {
     print "\tContent: " . $content;
     print "\toutput file: " . $out;
 }
+
 sub goout {
     print "Usage: lsbtool.pl [args] picture.(png|jpg|gif)";
-    print "\t-i pic : Inject picture";
-    print "\t-b bit : Inject bit [8..1]";
-    print "\t-ch cnl: Inject channel (red|green|blue)  and alpha only for search";
-    print "\t-c ctn : Inject content";
-    print "\t-o pic : Output picture name";
-    print "\t-l pic : Look for lsb"; 
+    print "\t-i  pic : Inject picture";
+    print "\t-b  bit : Inject bit [8..1]";
+    print "\t-ch chl : Inject channel (red|green|blue)  and alpha only for search";
+    print "\t-c  ctn : Inject content";
+    print "\t-o  pic : Output picture name";
+    print "\t-l  pic : Look for lsb"; 
     print "E.q. perl lsbtool.pl -i picture.png -o output.png -b 1 -ch red -c sometext"; 
     print "E.q. perl lsbtool.pl -l picture.png -b 1 -ch red"; 
     exit;

@@ -1,15 +1,9 @@
 # lsbtool
 
  LSBTool 
-
-# Version
-
- Version: 1.0.6
- Date: 2015.05.03
-
-#Author
- 
- patrick
+ Version:    1.0.6
+ Date:       2015.05.03
+ Author:    patrick
 
 # Description
 
@@ -20,17 +14,22 @@
 
 # Options
 
-    1. -i pic : Inject picture
-    2. -b bit : (Inject | Look for) bit [8..1]
-    3. -ch chl: (Inject | Look for) channel (red|green|blue) and alpha only for search
-    4. -c ctn : Injection's content
-    5. -o pic : Output picture name
-    6. -l pic : Look for lsb injection
+ 1. `-i  pic` : Inject picture
+ 2. `-l  pic` : Look for lsb injection
+ 3. `-b  bit` : (Inject | Look for) bit [8..1]
+ 4. `-ch chl` : (Inject | Look for) channel (red|green|blue) and alpha only for search
+ 5. `-c  ctn` : Injection's content
+ 6. `-o  pic` : Output picture name
 
 # Usage
 
- ```perl lsbtool.pl -i file.png -b 1 -ch red -c InjectedText```
- ```perl lsbtool.pl -l file.png -b 1 -ch red```
+ ```bash
+    perl lsbtool.pl -i file.png -b 1 -ch red -c InjectedText
+ ```
+
+ ```bash
+    perl lsbtool.pl -l file.png -b 1 -ch red
+ ```
 
 #Support
 
